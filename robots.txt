@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Disallow legacy/old pages
+Disallow: /old-home
+Disallow: /workold
+Disallow: /aboutold
+
+# Sitemap
+Sitemap: https://filmkraft.tv/sitemap.xml
