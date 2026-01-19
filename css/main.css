@@ -139,6 +139,14 @@ section {
     margin-bottom: 1.5rem;
 }
 
+.section-header h3 {
+    text-align: center;
+}
+
+.section-header p {
+    text-align: center;
+}
+
 .section-cta {
     text-align: center;
     margin-top: 4rem;
