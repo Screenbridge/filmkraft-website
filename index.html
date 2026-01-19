@@ -14,13 +14,21 @@
     <meta property="og:url" content="https://filmkraft.tv">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="/assets/filmkraft_logos/04_SymbolOnly/Isotype.svg">
     
     <!-- Styles -->
     <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- GSAP & Lenis for Animations -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     
     <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
@@ -97,6 +105,96 @@
       }
     }
     </script>
+    
+    <!-- FAQ Schema for SEO, AEO, and GEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What types of video production services does Filmkraft offer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Filmkraft specializes in TV commercial production, CTV and OTT advertising, testimonial videos, explainer videos, product and lifestyle photography, and animation. We create cinematic, performance-driven advertising for television and streaming platforms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does it cost to produce a TV commercial with Filmkraft?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TV commercial production costs vary based on scope, complexity, and deliverables. Projects typically range from $15,000 to $100,000+. We offer modular packages that capture multiple ad lengths and formats to maximize your production value. Contact us for a custom quote based on your specific needs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the typical timeline for a video production project?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most TV commercial projects take 4-8 weeks from concept to delivery. This includes discovery (1 week), concept development (1-2 weeks), pre-production (1 week), production (1-2 days), and post-production (2-3 weeks). Rush timelines are available for time-sensitive campaigns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Filmkraft work with brands outside of New York?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. While we're based in New York City, we work with brands nationwide and internationally. We have experience producing content across the US and can travel to your location or work remotely through virtual collaboration tools."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Filmkraft different from other video production agencies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Filmkraft specializes in TV and CTV advertising with over 10 years of experience. We understand how to create content that performs under real media spend, balancing brand building with direct response. Our modular approach captures assets that can be adapted across multiple platforms, maximizing your ROI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can Filmkraft help with media buying and ad placement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "While we focus on creative production, we work closely with media buying partners and can provide strategic guidance on platform optimization, creative testing, and performance analysis. We deliver assets optimized for specific platforms including TV, CTV, YouTube, Meta, and more."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What platforms do you optimize content for?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We create content optimized for traditional TV, Connected TV (Roku, Hulu, Amazon Fire TV), YouTube, Meta (Facebook and Instagram), TikTok, Snapchat, and OLV (Online Video). We deliver multiple formats and aspect ratios to ensure your content performs across all channels."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer ongoing retainer services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We offer monthly retainer packages for brands that need ongoing creative support. This includes quarterly creative refreshes, performance optimization, creative testing, and rapid turnaround for new variations. Retainers ensure you always have fresh content for your campaigns."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is your process for TV commercial production?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our process includes 6 stages: (1) Discovery - understanding your brand and goals, (2) Concept Development - creating multiple creative directions, (3) Pre-Production - scripting, casting, location scouting, (4) Production - shoot day with full crew, (5) Post-Production - editing, color grading, sound design, (6) Delivery - final files in all required formats with optimization recommendations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you turn existing social content into TV commercials?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Through our Screenbridge division, we specialize in transforming high-performing UGC and social videos into premium TV and CTV commercials. We elevate the production quality while maintaining the authentic performance that made the original content successful."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -104,9 +202,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <a href="/" class="logo">
-                    <svg width="120" height="32" viewBox="0 0 120 32" fill="none">
-                        <text x="0" y="24" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="currentColor">Filmkraft</text>
-                    </svg>
+                    <img src="/assets/filmkraft_logos/03_Logotype/Logotype_Black_Horizontal_Vector.svg" alt="Filmkraft" height="32">
                 </a>
                 <button class="nav-toggle" aria-label="Toggle menu">
                     <span></span>
@@ -124,28 +220,40 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Section with Video Background -->
+    <section class="hero hero-video">
+        <div class="hero-video-bg">
+            <video autoplay muted loop playsinline class="hero-video-element">
+                <source src="/assets/hero-showreel.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+        </div>
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Modern TV campaigns built to perform.</h1>
-                <p class="hero-description">
+            <div class="hero-content animate-fade-up">
+                <h1 class="hero-title">
+                    <span class="hero-line" style="--delay: 0.2s">Modern TV campaigns</span>
+                    <span class="hero-line" style="--delay: 0.4s">built to perform.</span>
+                </h1>
+                <p class="hero-description" style="--delay: 0.6s">
                     Filmkraft is a New York–based creative video agency specializing in cinematic, 
                     UI-driven advertising for television and streaming.
                 </p>
-                <div class="hero-cta">
+                <div class="hero-cta" style="--delay: 0.8s">
                     <a href="/contact/" class="btn btn-primary btn-lg">Get in Touch</a>
                     <a href="#talk-strategy" class="btn btn-secondary btn-lg">Talk TV Strategy</a>
                 </div>
             </div>
         </div>
+        <div class="scroll-indicator" style="--delay: 1s">
+            <div class="scroll-arrow"></div>
+        </div>
     </section>
 
     <!-- Client Logos -->
-    <section class="clients">
+    <section class="clients animate-section">
         <div class="container">
-            <p class="clients-label">Trusted by leading brands</p>
-            <div class="clients-grid">
+            <p class="clients-label fade-in">Trusted by leading brands</p>
+            <div class="clients-grid fade-in" style="--delay: 0.2s">
                 <div class="client-logo">1800Flowers</div>
                 <div class="client-logo">Lindt</div>
                 <div class="client-logo">PSD</div>
@@ -159,21 +267,21 @@
     </section>
 
     <!-- Who We Are Section -->
-    <section class="services-overview">
+    <section class="services-overview animate-section">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header fade-in">
                 <h2>Who we are</h2>
                 <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem;">A modern TV advertising agency.</h3>
                 <p style="max-width: 800px; margin: 0 auto 1rem;">Filmkraft is a New York–based advertising agency for brands entering or scaling on television. We are a premium, full-service partner specializing in staple TV advertising formats, including explainers, branded direct response, and testimonial-led campaigns. Our work sits at the intersection of strategy, creative, and production.</p>
             </div>
             
-            <div class="section-header" style="margin-top: 4rem;">
+            <div class="section-header fade-in" style="margin-top: 4rem;">
                 <h2>Why Filmkraft?</h2>
                 <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem;">Experienced partners for brands scaling on TV</h3>
                 <p style="max-width: 800px; margin: 0 auto;">We have over 10 years of experience building full TV and CTV advertising campaigns for brands at every stage of their television journey, from launching a first TV ad to optimizing and scaling long-running campaigns. We design our work modularly, capturing assets that can be adapted into multiple variations across TV and digital. We understand that TV advertising has the power to build brands and drive results at the same time, and our award-winning work is built to operate comfortably at that intersection under real media spend.</p>
             </div>
             
-            <div class="section-header" style="margin-top: 4rem;">
+            <div class="section-header fade-in" style="margin-top: 4rem;">
                 <h2>How we work</h2>
                 <h3 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem;">A practical approach to TV advertising.</h3>
                 <p style="max-width: 800px; margin: 0 auto;">We take a practical, modular approach to TV advertising, starting with clear strategic alignment around brand and performance goals. From there, we select the most effective format from proven TV staples, including high-concept brand ads, explainers, and testimonial-led campaigns, and develop the creative end to end, from concepts and scripts through production and delivery. Clients are closely involved throughout the process, with regular check-ins and clear communication to ensure brand identity and product nuance are accurately translated into advertising built to run in market and scale.</p>
@@ -182,17 +290,23 @@
     </section>
 
     <!-- Featured Work -->
-    <section class="featured-work section-yellow" id="talk-strategy">
+    <section class="featured-work section-yellow animate-section" id="talk-strategy">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header fade-in">
                 <h2>Featured Work</h2>
             </div>
             <div class="work-grid">
-                <a href="/work/keepsake-frames-tv-commercial/" class="work-card featured">
+                <div class="work-grid-background"></div>
+                <a href="/work/keepsake-frames-tv-commercial/" class="work-card featured fade-in" style="--delay: 0.1s">
                     <span class="badge badge-purple work-card-badge">High Concept</span>
                     <div class="work-image">
-                        <img src="/assets/placeholder-work.jpg" alt="Keepsake Frames TV Commercial" loading="lazy">
-                        <div class="work-play">▶</div>
+                        <video class="work-video" muted loop playsinline>
+                            <source src="/assets/work/keepsake-preview.mp4" type="video/mp4">
+                        </video>
+                        <img src="/assets/placeholder-work.jpg" alt="Keepsake Frames TV Commercial" loading="lazy" class="work-thumbnail">
+                        <div class="work-overlay">
+                            <div class="work-play">▶</div>
+                        </div>
                     </div>
                     <div class="work-content">
                         <h3 class="work-card-title">Keepsake Frames</h3>
@@ -200,10 +314,15 @@
                         <a href="/work/keepsake-frames-tv-commercial/" style="color: var(--color-secondary); font-weight: 600; text-decoration: underline;">Read Video Case Study</a>
                     </div>
                 </a>
-                <a href="/work/psd-underwear-ctv-campaign/" class="work-card">
+                <a href="/work/psd-underwear-ctv-campaign/" class="work-card fade-in" style="--delay: 0.2s">
                     <div class="work-image">
-                        <img src="/assets/placeholder-work.jpg" alt="PSD Underwear CTV Campaign" loading="lazy">
-                        <div class="work-play">▶</div>
+                        <video class="work-video" muted loop playsinline>
+                            <source src="/assets/work/psd-preview.mp4" type="video/mp4">
+                        </video>
+                        <img src="/assets/placeholder-work.jpg" alt="PSD Underwear CTV Campaign" loading="lazy" class="work-thumbnail">
+                        <div class="work-overlay">
+                            <div class="work-play">▶</div>
+                        </div>
                     </div>
                     <div class="work-content">
                         <span class="work-category">CTV Campaign</span>
@@ -211,9 +330,10 @@
                         <p>High-energy CTV campaign targeting sports and lifestyle audiences with bold creative and compelling calls-to-action.</p>
                     </div>
                 </a>
-                <a href="/work/1800flowers-product-photography/" class="work-card">
+                <a href="/work/1800flowers-product-photography/" class="work-card fade-in" style="--delay: 0.3s">
                     <div class="work-image">
-                        <img src="/assets/placeholder-work.jpg" alt="1800Flowers Product Photography" loading="lazy">
+                        <img src="/assets/placeholder-work.jpg" alt="1800Flowers Product Photography" loading="lazy" class="work-thumbnail">
+                        <div class="work-overlay"></div>
                     </div>
                     <div class="work-content">
                         <span class="work-category">Photography</span>
@@ -221,9 +341,10 @@
                         <p>Vibrant lifestyle photography celebrating life's special moments with flowers, cakes, and gifts.</p>
                     </div>
                 </a>
-                <a href="/work/lindt-chocolate-campaign/" class="work-card">
+                <a href="/work/lindt-chocolate-campaign/" class="work-card fade-in" style="--delay: 0.4s">
                     <div class="work-image">
-                        <img src="/assets/placeholder-work.jpg" alt="Lindt Chocolate Campaign" loading="lazy">
+                        <img src="/assets/placeholder-work.jpg" alt="Lindt Chocolate Campaign" loading="lazy" class="work-thumbnail">
+                        <div class="work-overlay"></div>
                     </div>
                     <div class="work-content">
                         <span class="work-category">Product Photography</span>
@@ -258,23 +379,155 @@
         <div class="container">
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>📺 TV and CTV ads</h3>
+                    <div class="service-icon">
+                        <i data-lucide="tv" class="icon-large"></i>
+                    </div>
+                    <h3>TV and CTV ads</h3>
                     <p>We concept, write, and produce creative videos that elevate your brand and sell your product. From direct response to brand awareness commercials, we've got you covered from strategy to delivery.</p>
                 </div>
                 <div class="service-card">
-                    <h3>📸 Product and lifestyle photography</h3>
+                    <div class="service-icon">
+                        <i data-lucide="camera" class="icon-large"></i>
+                    </div>
+                    <h3>Product and lifestyle photography</h3>
                     <p>Do you need to promote a new product, refresh your website, or shoot lifestyle images for social? We offer all-in-one photography packages for high-end lifestyle and product shots, integrating creativity and expertise from casting to final retouching.</p>
-                    <a href="/services/product-lifestyle-photography/" class="link-arrow">Photography Services →</a>
+                    <a href="/services/product-lifestyle-photography/" class="link-arrow">Photography Services <i data-lucide="arrow-right" class="icon-inline"></i></a>
                 </div>
                 <div class="service-card">
-                    <h3>✨ Animation</h3>
+                    <div class="service-icon">
+                        <i data-lucide="sparkles" class="icon-large"></i>
+                    </div>
+                    <h3>Animation</h3>
                     <p>Captivate your audience and bring your imagination to life with exciting dynamic 2D and 3D animations that bring your marketing to the next level. Potential customers can see your product from unique angles and visualize usage scenarios. Animations can also get amazing results for an affordable budget.</p>
-                    <a href="/services/animation-video-production/" class="link-arrow">Book a Call →</a>
+                    <a href="/services/animation-video-production/" class="link-arrow">Book a Call <i data-lucide="arrow-right" class="icon-inline"></i></a>
                 </div>
                 <div class="service-card">
-                    <h3>🎬 UGC to TV Ads</h3>
+                    <div class="service-icon">
+                        <i data-lucide="video" class="icon-large"></i>
+                    </div>
+                    <h3>UGC to TV Ads</h3>
                     <p>Screenbridge is our creative engine for transforming social videos into premium commercials for TV, CTV, Youtube, Amazon, and OLV, built to perform.</p>
-                    <a href="https://screenbridge.tv" target="_blank" class="link-arrow">Visit screenbridge.tv →</a>
+                    <a href="https://screenbridge.tv" target="_blank" class="link-arrow">Visit screenbridge.tv <i data-lucide="external-link" class="icon-inline"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process -->
+    <section class="process-section bg-light">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Process</h2>
+                <p>From concept to delivery, we guide you through every stage</p>
+            </div>
+            <div class="process-grid fade-in">
+                <div class="process-step">
+                    <div class="process-number">
+                        <i data-lucide="search" class="icon-medium"></i>
+                    </div>
+                    <h3>Discovery</h3>
+                    <p>We learn about your brand, audience, goals, and budget. Understanding your business ensures our creative aligns with your strategy.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">
+                        <i data-lucide="lightbulb" class="icon-medium"></i>
+                    </div>
+                    <h3>Concept</h3>
+                    <p>Our creative team develops multiple concept directions with scripts and visual references. You choose the direction that resonates.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">
+                        <i data-lucide="clapperboard" class="icon-medium"></i>
+                    </div>
+                    <h3>Production</h3>
+                    <p>We handle all logistics: casting, locations, crew, equipment, and permits. You approve key decisions and we manage the rest.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">
+                        <i data-lucide="film" class="icon-medium"></i>
+                    </div>
+                    <h3>Post-Production</h3>
+                    <p>Expert editing, color grading, motion graphics, and sound design. Multiple revision rounds ensure you're thrilled with the result.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">
+                        <i data-lucide="package" class="icon-medium"></i>
+                    </div>
+                    <h3>Delivery</h3>
+                    <p>Final files delivered in all required formats with technical specs for each platform. Plus raw footage and project files.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">
+                        <i data-lucide="trending-up" class="icon-medium"></i>
+                    </div>
+                    <h3>Optimization</h3>
+                    <p>We provide performance insights and creative recommendations to help you maximize ROI from your content investment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about working with Filmkraft</p>
+            </div>
+            <div class="faq-grid fade-in">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What types of video production services does Filmkraft offer?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Filmkraft specializes in TV commercial production, CTV and OTT advertising, testimonial videos, explainer videos, product and lifestyle photography, and animation. We create cinematic, performance-driven advertising for television and streaming platforms.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How much does it cost to produce a TV commercial with Filmkraft?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>TV commercial production costs vary based on scope, complexity, and deliverables. Projects typically range from $15,000 to $100,000+. We offer modular packages that capture multiple ad lengths and formats to maximize your production value. Contact us for a custom quote based on your specific needs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the typical timeline for a video production project?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most TV commercial projects take 4-8 weeks from concept to delivery. This includes discovery (1 week), concept development (1-2 weeks), pre-production (1 week), production (1-2 days), and post-production (2-3 weeks). Rush timelines are available for time-sensitive campaigns.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Does Filmkraft work with brands outside of New York?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. While we're based in New York City, we work with brands nationwide and internationally. We have experience producing content across the US and can travel to your location or work remotely through virtual collaboration tools.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What makes Filmkraft different from other video production agencies?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Filmkraft specializes in TV and CTV advertising with over 10 years of experience. We understand how to create content that performs under real media spend, balancing brand building with direct response. Our modular approach captures assets that can be adapted across multiple platforms, maximizing your ROI.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is your process for TV commercial production?</span>
+                        <i data-lucide="chevron-down" class="faq-icon"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Our process includes 6 stages: (1) Discovery - understanding your brand and goals, (2) Concept Development - creating multiple creative directions, (3) Pre-Production - scripting, casting, location scouting, (4) Production - shoot day with full crew, (5) Post-Production - editing, color grading, sound design, (6) Delivery - final files in all required formats with optimization recommendations.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -298,14 +551,26 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
-                    <div class="footer-logo">Filmkraft</div>
+                    <div class="footer-logo">
+                        <img src="/assets/filmkraft_logos/02_WordOnly/Logo_White.png" alt="Filmkraft" style="height: 32px;">
+                    </div>
                     <p>New York–based creative video agency specializing in cinematic, UI-driven advertising for television and streaming.</p>
                     <div class="footer-social">
-                        <a href="https://instagram.com/filmkraft.tv" aria-label="Instagram">📷</a>
-                        <a href="https://www.facebook.com/filmkraft.tv/" aria-label="Facebook">📘</a>
-                        <a href="https://vimeo.com/filmkrafttv" aria-label="Vimeo">🎬</a>
-                        <a href="https://www.youtube.com/@filmkrafttv" aria-label="YouTube">▶️</a>
-                        <a href="https://www.linkedin.com/company/filmkraft/" aria-label="LinkedIn">💼</a>
+                        <a href="https://instagram.com/filmkraft.tv" aria-label="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/filmkraft.tv/" aria-label="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                        <a href="https://vimeo.com/filmkrafttv" aria-label="Vimeo">
+                            <i data-lucide="video"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@filmkrafttv" aria-label="YouTube">
+                            <i data-lucide="youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/filmkraft/" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="footer-col">
@@ -332,12 +597,20 @@
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul class="footer-contact">
-                        <li><a href="tel:+19172679264">📞 (917) 267-9264</a></li>
-                        <li><a href="mailto:hello@filmkraft.tv">✉️ hello@filmkraft.tv</a></li>
+                        <li>
+                            <a href="tel:+19172679264">
+                                <i data-lucide="phone" class="icon-small"></i> (917) 267-9264
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:hello@filmkraft.tv">
+                                <i data-lucide="mail" class="icon-small"></i> hello@filmkraft.tv
+                            </a>
+                        </li>
                         <li>
                             <a href="https://goo.gl/maps/Dpx1Cmom99Th9vmV6" target="_blank">
-                                📍 28-07 Jackson Ave, 5th Floor<br>
-                                Long Island City, NY 11101
+                                <i data-lucide="map-pin" class="icon-small"></i> 28-07 Jackson Ave, 5th Floor<br>
+                                <span style="margin-left: 28px;">Long Island City, NY 11101</span>
                             </a>
                         </li>
                     </ul>
@@ -350,5 +623,6 @@
     </footer>
 
     <script src="/js/main.js"></script>
+    <script src="/js/animations.js"></script>
 </body>
 </html>
