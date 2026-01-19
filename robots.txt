@@ -7,4 +7,4 @@ Disallow: /workold
 Disallow: /aboutold
 
 # Sitemap
-Sitemap: https://filmkraft.tv/sitemap.xml
+Sitemap: https://screenbridge.github.io/filmkraft-website/sitemap.xml

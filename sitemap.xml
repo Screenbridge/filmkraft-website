@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Homepage -->
   <url>
-    <loc>https://filmkraft.tv/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,7 +10,7 @@
   
   <!-- Services Hub -->
   <url>
-    <loc>https://filmkraft.tv/services/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/services/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -18,37 +18,37 @@
   
   <!-- Service Pages -->
   <url>
-    <loc>https://filmkraft.tv/services/tv-commercial-production/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/services/tv-commercial-production/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://filmkraft.tv/services/ctv-ad-production/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/services/ctv-ad-production/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://filmkraft.tv/services/testimonial-video-production/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/services/testimonial-video-production/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://filmkraft.tv/services/explainer-video-production/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/services/explainer-video-production/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://filmkraft.tv/services/product-lifestyle-photography/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/services/product-lifestyle-photography/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://filmkraft.tv/services/animation-video-production/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/services/animation-video-production/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -56,7 +56,7 @@
   
   <!-- Work/Portfolio -->
   <url>
-    <loc>https://filmkraft.tv/work/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/work/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -64,7 +64,7 @@
   
   <!-- Guides Hub -->
   <url>
-    <loc>https://filmkraft.tv/guides/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/guides/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -72,19 +72,19 @@
   
   <!-- Guide Articles -->
   <url>
-    <loc>https://filmkraft.tv/guides/ctv-advertising-guide/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/guides/ctv-advertising-guide/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://filmkraft.tv/guides/tv-commercial-production-cost/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/guides/tv-commercial-production-cost/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://filmkraft.tv/guides/testimonial-video-script-template/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/guides/testimonial-video-script-template/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -92,7 +92,7 @@
   
   <!-- Local SEO -->
   <url>
-    <loc>https://filmkraft.tv/nyc-video-production/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/nyc-video-production/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -100,13 +100,13 @@
   
   <!-- Other Pages -->
   <url>
-    <loc>https://filmkraft.tv/about/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/about/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://filmkraft.tv/contact/</loc>
+    <loc>https://screenbridge.github.io/filmkraft-website/contact/</loc>
     <lastmod>2026-01-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
